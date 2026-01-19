@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Calculator</title>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="calculator">
+            <div class="field">
+                <label for="fvalue">First value </label>
+                <input type="text" id="fvalue" name="fname" class="clearable-field">
+            </div>
+            <div class="field">
+                <label for="svalue">Second value </label>
+                <input type="text" id="svalue" name="sname" class="clearable-field">
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="addition()"> + </button>
+                <button type="button" onclick="subtraction()"> - </button>
+                <button type="button" onclick="division()"> / </button>
+                <button type="button" onclick="multiplication()"> * </button>
+                <button type="button" onclick= "clearFields()"> C </button>
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
