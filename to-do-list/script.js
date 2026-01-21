@@ -1,5 +1,9 @@
 function displayText(){
     var inputValue = document.getElementById("task").value;
 
-    document.getElementById("")
+    let toDo = [];
+
+    toDo.push(inputValue);
+
+    document.getElementById("outputText").innerHTML = toDo;
 }
