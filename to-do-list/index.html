@@ -3,32 +3,31 @@
 <html>
 <head>
 <title>To-Do List</title>
-<script src = script.js></script>
+
 <link rel="stylesheet" href="style.css">
 </head>   
 <body>
-    <form>
-        <div class="to-do-list">
-            <div class="displayed-text">
-               <p id="outputText"></p> <!-- The elements from the array are displayed here-->
-            </div>
-            <div class="field">
-                <label for="task"> Task</label>
-                <input type="text" id="task">                
-            </div>
-            <div class="field">
-                <label for="task">Description</label>
-                <input type="text" id="task-description">
-            </div>
-            <div class="field">
-                <label for="task">Priority</label>
-                <input type="text" id="task-priority">
-            </div>
-            <div class="buttons">
-                <button type="button" onclick="addTask()">Add</button>
-                <button type="button" onclick="deleteTask()">Delete</button>
-            </div>
+    <div class="to-do-list">
+        <div class="displayed-text">
+            <p id="outputText"></p> <!-- The elements from the array are displayed here-->
         </div>
-    </form>  
+        <div class="field">
+            <label for="task"> Task</label>
+            <input type="text" id="task">                
+        </div>
+        <div class="field">
+            <label for="task-description">Description</label>
+            <input type="text" id="task-description">
+        </div>
+        <div class="field">
+            <label for="task-priority">Priority</label>
+            <input type="text" id="task-priority">
+        </div>
+        <div class="buttons">
+            <button type="button" onclick="addTask()">Add</button>
+            <button type="button" onclick="deleteTask()">Delete</button>
+        </div>
+    </div>
+    <script src = script.js></script>  
 </body>
 </html>
