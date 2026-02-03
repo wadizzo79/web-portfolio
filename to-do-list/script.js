@@ -10,8 +10,7 @@ function addTask(){
         priority: document.getElementById("task-priority").value, // An object storing the values from the input fields
 }   ); // The value in inputValue is then stored in the array
 
-    document.getElementById("outputText").innerHTML = toDo
-    .map(item => `${item.task}<br>${item.description}<br>${item.priority}`).join("<hr>"); // Loops thrrough the array one array at a time and returns a new array 
+    renderTasks(); // Loops thrrough the array one array at a time and returns a new array 
 
     
 
@@ -26,4 +25,37 @@ function deleteTask(){
     document.getElementById("outputText").innerHTML = toDo
     .map(item => `${item.task}<br>${item.description}<br>${item.priority}`).join("<hr>");
 
+}
+
+function renderTasks(){
+    const output = document.getElementById("outputText");
+    output.innerHTML = ""; // clears the container safely
+
+    toDo.forEach((item, index) => {
+        const taskDiv = document.createElement("div");
+
+        const title = document.createElement("p");
+        title.textContent = item.task;
+
+        const desc = document.createElement("p");
+        desc.textContent = item.description;
+
+        const priority = document.createElement("p");
+        priority.textContent = item.priority;
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.textContent = "Delete";
+
+        deleteBtn.addEventListener("click", () => {
+            toDo.splice(index, 1);
+            renderTasks();
+        });
+
+        taskDiv.appendChild(title);
+        taskDiv.appendChild(desc);
+        taskDiv.appendChild(priority);
+        taskDiv.appendChild(deleteBtn);
+
+        output.appendChild(taskDiv);
+    });
 }
