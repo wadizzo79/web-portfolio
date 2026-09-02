@@ -2,7 +2,7 @@
 
 A simple Todo List application built with React. This was my first project using React and was built to practice React fundamentals, component structure, state management, and working with browser storage.
 
-**[Live Demo](https://react-todo-list-eight-sooty.vercel.app/)**
+**[Live Demo](https://to-do-list-olive-xi.vercel.app/)**
 
 ## Features
 
