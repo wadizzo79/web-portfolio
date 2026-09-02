@@ -13,13 +13,13 @@ The purpose of this repository is to:
 ## Projects
 - **Calculator** – A basic calculator implementing arithmetic operations and user input handling
 - **To-Do List** – A task management app for adding, displaying, and removing tasks
-- **Weather App** – An application that fetches and displays weather data using an external API  
-  *(Work in progress)*
+- **Tic-Tac-Toe** – A simple tic-tac-toe game  
 
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript
+- React
 
 ## How to Run
 Most projects can be run by opening the corresponding `index.html` file in a web browser.
