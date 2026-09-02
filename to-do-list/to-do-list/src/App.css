@@ -1,0 +1,127 @@
+.app {
+  max-width: 600px;
+  margin: 50px auto 0;
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.input-area {
+  display: flex;
+  gap: 8px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.input-area button {
+  background-color: grey;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.input-area button:hover {
+  background-color: darkgray;
+}
+
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+  gap: 8px;
+}
+
+.task-list li span {
+  flex: 1;
+  font-size: 16px;
+  margin-right: 12px;
+}
+
+.task-list li button {
+  background-color: grey;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.task-list li .delete-button {
+  background-color: #dc3545;
+}
+
+.task-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.task-controls button {
+  background-color: grey;
+  color: white;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.task-controls button:hover {
+  background-color: darkgray;
+}
+
+.task-controls button.active {
+  background-color: orange;
+}
+
+.task-list li .completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-list li input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+
+.task-list li button:hover {
+  background-color: darkgray;
+}
+
+.task-list li .delete-button:hover {
+  background-color: red;
+}
+
+.task-count {
+  font-size: 14px;
+  color: #888;
+  margin-top: 16px;
+
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  margin: 10px 0;
+}
+
+.app h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
