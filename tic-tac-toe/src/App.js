@@ -15,7 +15,7 @@ function Board({ xIsNext, squares, onPlay }) { // This component represents the 
     } else {
       nextSquares[i] = "O";
     }
-    onPlay(nextSquares);
+    onPlay(nextSquares); 
   } // This function is called when a square is clicked. It checks if the square is already filled or if there is a winner. If not, it creates a copy of the squares array, updates the clicked square with "X" or "O" depending on whose turn it is, and then calls the onPlay function to update the game state.
 
   const winner = calculateWinner(squares); // This line calculates if there is a winner based on the current state of the squares.

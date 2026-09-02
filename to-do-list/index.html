@@ -1,33 +1,13 @@
-<!DOCTYPE html>
-
-<html>
-<head>
-<title>To-Do List</title>
-
-<link rel="stylesheet" href="style.css">
-</head>   
-<body>
-    <div class="to-do-list">
-        <div class="displayed-text">
-            <div id="outputText"></div> <!-- The elements from the array are displayed here-->
-        </div>
-        <div class="field">
-            <label for="task"> Task</label>
-            <input type="text" id="task">                
-        </div>
-        <div class="field">
-            <label for="task-description">Description</label>
-            <input type="text" id="task-description">
-        </div>
-        <div class="field">
-            <label for="task-priority">Priority</label>
-            <input type="text" id="task-priority">
-        </div>
-        <div class="buttons">
-            <button type="button" onclick="addTask()">Add</button>
-            <button type="button" onclick="deleteTask()">Delete</button>
-        </div>
-    </div>
-    <script src = script.js></script>  
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do-list</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
