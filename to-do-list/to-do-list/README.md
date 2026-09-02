@@ -1,18 +1,66 @@
-# React + Vite
+# React Todo List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple Todo List application built with React. This was my first project using React and was built to practice React fundamentals, component structure, state management, and working with browser storage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Add tasks
+* Mark tasks as completed
+* Edit existing tasks
+* Delete tasks
+* Filter tasks by All, Active, and Completed
+* Sort tasks by Newest and Oldest
+* Clear completed tasks
+* Display completed task count
+* Save tasks to Local Storage
+* Responsive layout
 
-## React Compiler
+## Built With
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+* React
+* JavaScript
+* HTML
+* CSS
+* Vite
 
-Note: This will impact Vite dev & build performances.
+## What I Learned
 
-## Expanding the ESLint configuration
+This project helped me practice:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React components and props
+* `useState` for managing application state
+* `useEffect` for synchronizing data with Local Storage
+* `useRef` for managing input focus
+* Rendering lists with `.map()`
+* Updating arrays without directly modifying state
+* Conditional rendering
+* Handling user input and keyboard events
+* Filtering and sorting data
+* Persisting application data with Local Storage
+
+## Running Locally
+
+Clone the repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/wadizzo79/web-portfolio.git
+cd web-portfolio/to-do-list/to-do-list
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will then be available at the local address provided by Vite.
+
+## Project Status
+
+Completed — the application is fully functional and was built as part of my React learning and portfolio development.
